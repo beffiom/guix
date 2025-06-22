@@ -1,0 +1,85 @@
+#movies
+007 Casino Royale
+007 Goldfinger
+American Pyscho
+Angel's Egg
+Back to the Future
+The Basketball Diaries
+Big Trouble in Little China
+Blade Runner
+Braveheart
+Clueless
+Creed
+The Dark Knight
+Demon City Shinjuku
+Enter the Dragon
+Fight Club
+Fist of Fury
+The French Connection
+Full Metal Jacket
+Gladiator
+GoldenEye
+Golgo 13 The Professional
+Good Will Hunting
+Heathers
+Hero
+Howl's Moving Castle
+Jaws
+Jin-Roh: The Wolf Brigade
+Jurassic Park
+Kung Fu Hustle
+The Lord of the Rings
+The Matrix
+Memento
+Metropolis
+The Mummy
+Nausicaa The Valley of the Wind
+Ninja Scroll
+No Country for Old Men
+Office Space
+Paprika
+Parasite
+Perfect Blue
+Police Story
+The Prince of Egypt
+The Princess Bride
+Pulp Fiction
+Raging Bull
+Redline
+Road House
+Se7en
+The Shawsank Redemption
+The Silence of the Lambs
+Silent Voice
+Spider-Man: Across The Spidervers
+Spider-Man: Into The Spiderverse
+Taxi Driver
+The Terminator
+Terminator 2: Judgement Day
+To Die For
+Tokyo Godfathers
+Trainspotting
+Vampire Hunter D
+The Virgin Suicides
+The Way of the Dragon
+Wicked City
+Your Name.
+Zoolander
+
+#kdramas
+Alchemy of Souls
+Beyond Evil
+Crash Landing on You
+Extraordinary Attorney Woo
+Flower of Evil
+Goblin
+Hometowm Cha-Cha-Cha
+Move To Heaver
+Reply 1988
+Signal
+Stranger
+True Beauty
+Twenty Five Twenty One
+Twinkling Watermelon
+Vincenzo
+Weightlifting Fairy Kim Bok Joo

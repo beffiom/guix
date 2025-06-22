@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#runuser -u beffiom -- bemenu-run -c -l 10 down -M 650 --scrollbar none -f --single-instance --fn "FontAwesome 22" --hf "#85678f" --tf "#707880" -B 10 --bdr "#85678f" -R 15 -p run:
+bemenu-run --single-instance --hf "#85678f" --tf "#85678f" -p ""

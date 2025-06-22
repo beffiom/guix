@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+#-------------------------------#
+# Display current cover         #
+# ueberzug version              #
+#-------------------------------#
+
+function ImageLayer {
+    ueberzug layer -sp json
+}
+
+COVER="$XDG_CONFIG_HOME/ncmpcpp/cover.jpg"
+X_POS=68.5
+Y_POS=3.5
+SIZE=38
+
+function add_cover {
+    if [ -e $COVER ]; then
+        echo "{\"action\": \"add\", \"identifier\": \"cover\", \"x\": $X_POS, \"y\": $Y_POS, \"width\": $SIZE, \"path\": \"$COVER\"}";
+    fi
+}
+
+clear
+ImageLayer -< <(
+    add_cover
+    while inotifywait -q -q -e close_write "$COVER"; do
+        add_cover
+    done
+)
+

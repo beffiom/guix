@@ -1,0 +1,7 @@
+#!/bin/sh
+
+currentsong=$(mpc -f '[%artist%]\n[%title%]' current)
+NOWPLAYING=${currentsong% (*}
+sleep 0.5
+dunstify -r 1 -u low -i ~/.config/ncmpcpp/cover.jpg "$NOWPLAYING"
+
