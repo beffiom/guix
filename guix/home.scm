@@ -66,6 +66,7 @@
              (specification->package "wl-clipboard")
              (specification->package "wl-clipboard-x11")
              (specification->package "cliphist")
+             (specification->package "wtype")
              (specification->package "xdg-desktop-portal-wlr")
              (specification->package "xwayland")
              (specification->package "libva-utils")
@@ -80,8 +81,9 @@
              (specification->package "python-pip")
              (specification->package "swaybg")
              (specification->package "swayidle")
-             (specification->package "ncmpcpp")
              (specification->package "mpd")
+             (specification->package "beets")
+             (specification->package "udisks")
              (specification->package "mpv")
              (specification->package "mpv-mpris")
              (specification->package "ffmpeg")
@@ -96,6 +98,15 @@
              (specification->package "gallery-dl")
              (specification->package "lf")
              (specification->package "neomutt")
+             (specification->package "curl")
+             (specification->package "isync")
+             (specification->package "msmtp")
+             (specification->package "pass-age")
+             (specification->package "lynx")
+             (specification->package "notmuch")
+             ;;(specification->package "cronie")
+             ;;(specification->package "ca-certificates")
+             (specification->package "gettext")
              (specification->package "nushell")
              (specification->package "dunst")
              (specification->package "libnotify")
@@ -111,8 +122,14 @@
              (specification->package "recutils")
              (specification->package "entr")
              (specification->package "sc-im")
-             ;; Add any other user-specific packages here
+             (specification->package "zoxide")
              %default-home-packages))
+
+            ;; extra-packages
+            ;; atuin
+            ;; lazygit
+            ;; rmpc
+            ;; toutui
 
   ;; User-specific services.
   (services (cons*
