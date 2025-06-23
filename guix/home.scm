@@ -110,6 +110,7 @@
              (specification->package "zathura")
              (specification->package "recutils")
              (specification->package "entr")
+             (specification->package "sc-im")
              ;; Add any other user-specific packages here
              %default-home-packages))
 
