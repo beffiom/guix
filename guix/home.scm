@@ -108,6 +108,8 @@
              (specification->package "rbw")
              (specification->package "podman")
              (specification->package "zathura")
+             (specification->package "recutils")
+             (specification->package "entr")
              ;; Add any other user-specific packages here
              %default-home-packages))
 
