@@ -21,6 +21,8 @@
              (gnu packages cryptsetup)         ; for cryptsetup
              (gnu packages networking)         ; for network-manager
              (gnu packages gnome)              ; for gparted
+             (gnu packages wget)
+             (gnu packages curl)
              (gnu packages freedesktop)        ; for xdg-desktop-portal-wlr
              (gnu packages wm)                 ; for sway, waybar
              (gnu packages wayland)            ; for wayland packages
@@ -106,7 +108,6 @@
                    network-manager
                    linux-firmware
                    gparted
-                   gdisk
                    efibootmgr
                    ;; Wayland packages
                    sway
@@ -117,7 +118,6 @@
                    wayland-protocols
                    wl-clipboard
                    xdg-desktop-portal-wlr
-                   xwayland
                    ;; Graphics
                    mesa
                    vulkan-loader
