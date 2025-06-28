@@ -1,0 +1,26 @@
+doom-emacs
+mu4e
+bongo (music)
+nerd-icons
+emacs-emojify
+elisp-tree-sitter
+ts-fold
+auto-complete
+lsp-mode
+lsp-ui
+dired/dirvish
+elpy
+paredit (s-expression editor)
+clojure-mode
+cider
+clj-refactor
+ellsp
+elsa
+emacs-elisp-autofmt
+ellama
+emacs-langtool (requires langtool)
+magit
+completion vertico https://docs.doomemacs.org/latest/modules/completion/vertico/ (like telescope)
+org-mode, tangle, tables
+hyperbole
+pdf-tools + nov.el (like zathura)

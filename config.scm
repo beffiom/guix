@@ -81,7 +81,6 @@
              (specification->package "dwl-guile")
              (specification->package "git")
              (specification->package "neovim")
-             (specification->package "tmux")
              (specification->package "htop")
              (specification->package "fzf")
              (specification->package "ripgrep")

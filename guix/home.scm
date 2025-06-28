@@ -40,7 +40,6 @@
              (specification->package "dwl-guile")
              (specification->package "git")
              (specification->package "neovim")
-             (specification->package "tmux")
              (specification->package "htop")
              (specification->package "fzf")
              (specification->package "ripgrep")
@@ -81,8 +80,6 @@
              (specification->package "openjdk")
              (specification->package "python")
              (specification->package "python-pip")
-             (specification->package "lua")
-             (specification->package "luarocks")
              (specification->package "swaybg")
              (specification->package "swayidle")
              (specification->package "mpd")
@@ -91,7 +88,6 @@
              (specification->package "mpv")
              (specification->package "mpv-mpris")
              (specification->package "ffmpeg")
-             (specification->package "ffmpegthumbnailer")
              (specification->package "bluez")
              (specification->package "bluez-alsa")
              (specification->package "pipewire")
@@ -100,16 +96,7 @@
              (specification->package "pa-notify")
              (specification->package "yt-dlp")
              (specification->package "gallery-dl")
-             (specification->package "lf")
-             (specification->package "neomutt")
              (specification->package "curl")
-             (specification->package "isync")
-             (specification->package "msmtp")
-             (specification->package "pass-age")
-             (specification->package "lynx")
-             (specification->package "notmuch")
-             ;;(specification->package "cronie")
-             ;;(specification->package "ca-certificates")
              (specification->package "gettext")
              (specification->package "nushell")
              (specification->package "dunst")
@@ -122,18 +109,11 @@
              (specification->package "unzip")
              (specification->package "rbw")
              (specification->package "podman")
-             (specification->package "zathura")
              (specification->package "recutils")
              (specification->package "entr")
-             (specification->package "sc-im")
+             (specification->package "httrack")
              (specification->package "zoxide")
              %default-home-packages))
-
-            ;; extra-packages
-            ;; atuin
-            ;; lazygit
-            ;; rmpc
-            ;; toutui
 
   ;; User-specific services.
   (services (cons*
