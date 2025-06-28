@@ -11,6 +11,7 @@
     (gnu packages linux)
     (gnu packages networking)
     (gnu packages wm)
+    (gnu packages version-control)
     (nongnu packages linux)
     (nongnu system linux-initrd))
 
