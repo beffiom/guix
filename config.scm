@@ -155,7 +155,7 @@
          (service encrypted-devices-service-type
                   (encrypted-device-configuration
                    (targets (list (encrypted-device
-                                   (target (string-append "UUID=" "5c0b9970-3065-46f0-8003-a05e8f6fec05")) ; <<< THIS IS CORRECT AND NECESSARY
+                                   (target (string-append "UUID=" "5c0b9970-3065-46f0-8003-a05e8f6fec05")
                                    (label "guix_luks") ; Name used in /dev/mapper/
                                    (cipher "aes-xts-plain64")
                                    (key-size 512))))))
