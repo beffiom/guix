@@ -8,6 +8,7 @@
              (gnu services networking)
              (gnu services ssh)
              (gnu services linux)
+             (gnu services dbus)              ; Added for dbus-service-type
              (gnu packages)
              (gnu packages linux)
              (gnu packages version-control)    ; for git
@@ -99,7 +100,8 @@
                    ripgrep
                    bat
                    fd
-                   tldr
+                   ;; tldr  ; Removed - not available
+                   tealdeer  ; Added as replacement for tldr
                    wget
                    curl
                    zstd
