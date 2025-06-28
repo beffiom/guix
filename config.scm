@@ -15,6 +15,7 @@
          (gnu system nss)
          (gnu system file-systems) ; <<< ADDED - CRITICAL for file-system-related definitions
          (gnu system services) ; <<< ADDED - CRITICAL for `service` definitions like home-directory-service-type
+         (gnu system uuid)
          (gnu packages admin)
          (gnu packages bash)
          (gnu packages bsdutils)
@@ -155,7 +156,7 @@
          (service encrypted-devices-service-type
                   (encrypted-device-configuration
                    (targets (list (encrypted-device
-                                   (target (string-append "UUID=" "5c0b9970-3065-46f0-8003-a05e8f6fec05")
+                                   (target (uuid "5c0b9970-3065-46f0-8003-a05e8f6fec05"))
                                    (label "guix_luks") ; Name used in /dev/mapper/
                                    (cipher "aes-xts-plain64")
                                    (key-size 512))))))
@@ -173,13 +174,13 @@
 (file-systems (cons*
                    (file-system
                      (mount-point "/boot/efi")
-                     (device (string-append "UUID=" "9BA1-F232")) ; <<< UUID of /dev/nvme0n1p1
+                     (device (uuid "UUID=" "9BA1-F232")) ; <<< UUID of /dev/nvme0n1p1
                      (type "vfat")
                      (mount-options "umask=0077"))
 
                    (file-system
                      (mount-point "/boot")
-                     (device (string-append "UUID=" "7663a7ea-d2fe-4862-aa64-173c5a2badba")) ; <<< UUID of /dev/nvme0n1p2
+                     (device (uuid "7663a7ea-d2fe-4862-aa64-173c5a2badba")) ; <<< UUID of /dev/nvme0n1p2
                      (type "ext2"))
 
                    (file-system
