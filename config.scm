@@ -24,9 +24,8 @@
              (gnu packages gnome)              ; for gparted
              (gnu packages wget)
              (gnu packages curl)
-             (gnu packages freedesktop)        ; for xdg-desktop-portal-wlr
+             (gnu packages freedesktop)        ; for xdg-desktop-portal-wlr, wayland, wayland-protocols
              (gnu packages wm)                 ; for sway, waybar
-             (gnu packages wayland)            ; for wayland packages
              (gnu packages xdisorg)            ; for wayland utilities
              (gnu packages gl)                 ; for mesa
              (gnu packages vulkan)             ; for vulkan-loader, vulkan-tools
@@ -88,7 +87,7 @@
                  (comment "beffiom")
                  (group "users")
                  (home-directory "/home/beffiom")
-                 (supplementary-groups '("wheel" "input" "video" "audio" "netdev")))
+                 (supplementary-groups '("wheel" "input" "video" "audio" "netdev" "docker")))
                 %base-user-accounts))
 
   ;; System-wide packages
@@ -100,8 +99,7 @@
                    ripgrep
                    bat
                    fd
-                   ;; tldr  ; Removed - not available
-                   tealdeer  ; Added as replacement for tldr
+                   tealdeer  ; Replacement for tldr
                    wget
                    curl
                    zstd
@@ -111,7 +109,7 @@
                    linux-firmware
                    gparted
                    efibootmgr
-                   ;; Wayland packages
+                   ;; Wayland packages (from freedesktop and wm modules)
                    sway
                    swaylock
                    swayidle
