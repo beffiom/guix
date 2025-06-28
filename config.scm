@@ -81,11 +81,11 @@
 
 ;; User accounts
 (users (cons* (user-account
-             (name "ben")
-             (comment "Ben")
+             (name "beffiom")
+             (comment "beffiom")
              (group "users")
-             (home-directory "/home/ben")
-             (supplementary-groups '("wheel" "input" "video" "audio" "netdev")))
+             (home-directory "/home/beffiom")
+             (supplementary-groups '("wheel" "input" "video" "audio" "netdev" "docker")))
             %base-user-accounts))
 
 ;; System-wide packages
