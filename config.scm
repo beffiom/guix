@@ -174,7 +174,7 @@
 (file-systems (cons*
                    (file-system
                      (mount-point "/boot/efi")
-                     (device (uuid "UUID=" "9BA1-F232")) ; <<< UUID of /dev/nvme0n1p1
+                     (device (uuid "9BA1-F232")) ; <<< UUID of /dev/nvme0n1p1
                      (type "vfat")
                      (mount-options "umask=0077"))
 
