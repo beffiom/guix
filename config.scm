@@ -72,7 +72,7 @@
               ;; to prevent plain text password in config.
               ;; For initial setup, '("password" "your-initial-password")' is fine.
               (password "pass") ;; <<< CUSTOMIZE THIS
-              (supplementary-groups '("wheel" "input" "video" "audio" "netdev" "podma")) ; <<< ADDED groups here
+              (supplementary-groups '("wheel" "input" "video" "audio" "netdev" "docker")) ; <<< ADDED groups here
             )
             %default-user-accounts))
 
@@ -156,7 +156,7 @@
                   (encrypted-device-configuration
                    (targets (list (encrypted-device
                                    (target "/dev/nvme0n1p3") ; <<< YOUR LUKS PARTITION
-                                   (label "cryptroot") ; Name used in /dev/mapper/
+                                   (label "guix_luks") ; Name used in /dev/mapper/
                                    (cipher "aes-xts-plain64")
                                    (key-size 512))))))
 
