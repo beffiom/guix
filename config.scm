@@ -71,8 +71,8 @@
               ;; Set to 'hash-scl' with 'password-hash' or 'scrypt'
               ;; to prevent plain text password in config.
               ;; For initial setup, '("password" "your-initial-password")' is fine.
-              (password "your-initial-password-here") ;; <<< CUSTOMIZE THIS
-              (supplementary-groups '("wheel" "input" "video" "audio" "netdev" "docker")) ; <<< ADDED groups here
+              (password "pass") ;; <<< CUSTOMIZE THIS
+              (supplementary-groups '("wheel" "input" "video" "audio" "netdev" "podma")) ; <<< ADDED groups here
             )
             %default-user-accounts))
 
@@ -173,26 +173,26 @@
 (file-systems (cons*
                    (file-system
                      (mount-point "/boot/efi")
-                     (device "/dev/nvme0n1p1") ; <<< Your EFI System Partition
+                     (device (string-append "UUID=" "9BA1-F232")) ; <<< UUID of /dev/nvme0n1p1
                      (type "vfat")
-                     (mount-options "umask=0077")) ; Changed from dependencies list
+                     (mount-options "umask=0077"))
 
                    (file-system
                      (mount-point "/boot")
-                     (device "/dev/nvme0n1p2") ; <<< Your /boot partition
-                     (type "ext2")) ; Assumed ext2 based on our mkfs.ext2
+                     (device (string-append "UUID=" "7663a7ea-d2fe-4862-aa64-173c5a2badba")) ; <<< UUID of /dev/nvme0n1p2
+                     (type "ext2"))
 
                    (file-system
                      (mount-point "/")
-                     (device "/dev/mapper/cryptroot") ; <<< Decrypted LUKS volume
+                     (device "/dev/mapper/guix_luks")
                      (type "btrfs")
-                     (mount-options "noatime,compress=zstd:3,subvol=@")) ; <<< Consistent with btrfs subvolume create
+                     (mount-options "noatime,compress=zstd:3,subvol=@"))
 
                    (file-system
                      (mount-point "/home")
-                     (device "/dev/mapper/cryptroot") ; <<< Decrypted LUKS volume
+                     (device "/dev/mapper/guix_luks")
                      (type "btrfs")
-                     (mount-options "noatime,compress=zstd:3,subvol=@home"))) ; <<< Consistent with btrfs subvolume create
+                     (mount-options "noatime,compress=zstd:3,subvol=@home")))
                    %default-file-systems))
 
 ;; GRUB bootloader configuration.
